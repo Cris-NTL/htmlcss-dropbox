@@ -65,6 +65,14 @@ section.faq {
     height: 400px;
     background-color: #4e45ff;
 }
+footer {
+    background-color: black;
+    height: 250px;
+}
+.bottom-wrapper {
+    background-color: rgba(250, 235, 215, 0.511);
+    border: 1px solid white;
+}
 
 /* utility */
 :root {
@@ -85,6 +93,11 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* body */
@@ -133,4 +146,10 @@ main {
         width: 50%;
         margin-bottom: 100px;
     }
+    
     /* footer */
+    .bottom-wrapper {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
