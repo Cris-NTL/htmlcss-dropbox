@@ -12,19 +12,18 @@ img {
 main section {
     background-color: lightseagreen;
 }
-section .checkbox {
-    width: 300px;
-    height: 50px;
-    background-color: rgba(255, 160, 122, 0.462);
-}
 section .row {
     height: 800px;
     background-color: rgba(253, 119, 119, 0.379);
 }
+section .row .column {
+    background-color:rgba(127, 255, 212, 0.468) ;
+    border: 1px solid grey;
+}
+/* section .row .column  */
 section .partner {
     height: 400px;
 }
-
 section .business {
     height: 600px;
 }
@@ -140,9 +139,12 @@ footer {
 
     /* main */
     main section {
-        width: 50%;
-        margin-top: 200px;
+        width: 70%;
+        margin-top: 10rem;
         align-self: center;
+    }
+    section.wrap h2 {
+        font-size: 35px;
     }
     section .checkbox {
         margin: 50px 0;
@@ -150,6 +152,72 @@ footer {
     section .row {
         width: 100%;
         margin-bottom: 50px;
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section .row .column {
+        width: calc(100% / 3 - 20px);
+    }
+    section .row .column .type {
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+    section .row .column .content {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;        
+    }
+    section .row .column .content h5 {
+        font-size: 26px;
+    }
+    section .row .column .content .price {
+        font-weight: bold;
+    }
+    section .row .column .content .period {
+        color: gray;
+        margin-bottom: 3rem;
+    }
+    section .row .column div * {
+        display: block;
+    }
+    section .row .column div i {
+        display: inline;
+    }
+    section .row .column div span.awesome {
+        margin-bottom: 1rem;
+    }
+    section .row .column div span.awesome.nodes {
+        margin-bottom: 3rem;
+    }
+    section .row .column div button {
+        background-color: var(--buttons);
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        margin-bottom: 2rem;
+    }
+    section .row .column div .buy-link {
+        margin-bottom: 2rem;
+    }
+    section .row .column div hr {
+        margin-bottom: 2rem;
+    }
+    section .row .column div h6 {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+    section .row .column div .check {
+        margin-bottom: 1rem;
+    }
+    section .row .column div .check i {
+        color: var(--buttons);
+    }
+    section .row .column .content:last-child {
+        margin-bottom: 10rem;
+    }
+    section .row .column:last-child {
+        width: 100%;
     }
     section .end-wrap {
         width: 100%;
