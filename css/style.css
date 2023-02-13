@@ -35,6 +35,36 @@ nav {
     opacity: 30%;
     border: 1px solid black;
 }
+main section {
+    background-color: lightseagreen;
+}
+section .checkbox {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255, 160, 122, 0.462);
+}
+section .row {
+    height: 800px;
+    background-color: rgba(253, 119, 119, 0.379);
+}
+section .partner {
+    height: 400px;
+}
+
+section .business {
+    height: 600px;
+}
+section .end-wrap {
+    height: 250px;
+}
+section.sponsor {
+    height: 800px;
+    background-color: var(--lightblue);
+}
+section.faq {
+    height: 400px;
+    background-color: #4e45ff;
+}
 
 /* utility */
 :root {
@@ -51,8 +81,10 @@ body {
 header {
     width: 100%;
 }
-h1 {
-    display: inline-block;
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* body */
@@ -77,6 +109,28 @@ h1 {
     .jumbotron .jumbo-image {
         width: 60%;
     }
-    /* main */
 
+    /* main */
+    main section {
+        width: 50%;
+        margin-top: 200px;
+        align-self: center;
+    }
+    section .checkbox {
+        margin: 50px 0;
+    }
+    section .row {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    section .end-wrap {
+        width: 100%;
+    }
+    section.sponsor {
+        width: 100%;
+    }
+    section.faq {
+        width: 50%;
+        margin-bottom: 100px;
+    }
     /* footer */
