@@ -9,10 +9,6 @@ img {
 }
 
 /* debug */
-section.sponsor {
-    height: 800px;
-    background-color: var(--lightblue);
-}
 section.faq {
     height: 400px;
     background-color: #4e45ff;
@@ -31,6 +27,16 @@ footer {
     --lightblue:#B4D0E7;
     --buttons:#0061FF;
     --designit:#F5F5F5;
+    /* sponsors-colors */
+    --sponsor-1: #A2D39B;
+    --sponsor-2: #61082B;
+    --sponsor-3: #0093CE;
+    --sponsor-4: #FF1C1C;
+    --sponsor-5: #D5001F;
+    --sponsor-6: #B4D0E7;
+    --sponsor-7: #0D2481;
+    --sponsor-8: #FFD830;
+    --sponsor-1-bis: #D1E9CD;
 }
 
 /* common */
@@ -123,7 +129,7 @@ footer {
     /* main */
     main section {
         width: 55%;
-        margin-top: 15rem;
+        margin-top: 10rem;
         align-self: center;
     }
     section.wrap h2 {
@@ -249,7 +255,68 @@ footer {
         width: 60%;
     }
     section.sponsor {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
+        background-color: var(--lightblue);
+    } 
+    section.sponsor .box {
+        width: calc(100% /3);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.sponsor .box.middle {
+        display: block;
+        padding: 3% 5% 10% 4%;
+        background-color: var(--designit);
+    }
+    section.sponsor .box.middle * {
+        margin-bottom: 2rem;
+    }
+    section.sponsor .box.middle img {
+        width: 60%;
+    }
+    section .row .column:last-child {
+        width: 100%;
+    }
+    section .partner {
+        width: 100%;
+    }    
+    section.sponsor .box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+    }
+    section.sponsor .box div img {
+        padding: 3rem;
+        filter: invert(1);
+    }
+    section.sponsor .box div.color-1 {
+        background-color: var(--sponsor-1);
+        border: 10px solid var(--sponsor-1-bis);
+    }
+    section.sponsor .box div.color-2 {
+        background-color: var(--sponsor-2);
+    }
+    section.sponsor .box div.color-3 {
+        background-color: var(--sponsor-3);
+    }
+    section.sponsor .box div.color-4 {
+        background-color: var(--sponsor-4);
+    }
+    section.sponsor .box div.color-5 {
+        background-color: var(--sponsor-5);
+    }
+    section.sponsor .box div.color-6 {
+        background-color: var(--sponsor-6);
+    }
+    section.sponsor .box div.color-7 {
+        background-color: var(--sponsor-7);
+    }
+    section.sponsor .box div.color-8 {
+        background-color: var(--sponsor-8);
     }
     section.faq {
         width: 50%;
