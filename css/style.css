@@ -9,16 +9,6 @@ img {
 }
 
 /* debug */
-section .row .column {
-    /* background-color:rgba(127, 255, 212, 0.468) ; */
-    border: 1px solid grey;
-}
-section .business {
-    height: 600px;
-}
-section .end-wrap {
-    height: 250px;
-}
 section.sponsor {
     height: 800px;
     background-color: var(--lightblue);
@@ -151,6 +141,7 @@ footer {
     }
     section .row .column {
         width: calc(100% / 3 - 20px);
+        border: 1px solid grey;
     }
     section .row .column .type {
         text-align: center;
@@ -244,8 +235,18 @@ footer {
         background: none;
         border: 1px solid;
     }
-    section .end-wrap {
+    section .business {
         width: 100%;
+    }
+    section .business .card {
+        width: calc(100% / 3 - 20px);    
+    }    
+    section .business .card h5 {
+        font-size: 26px;
+        margin-bottom: 1em;
+    }
+    section .end-wrap {
+        width: 60%;
     }
     section.sponsor {
         width: 100%;
