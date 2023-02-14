@@ -9,20 +9,9 @@ img {
 }
 
 /* debug */
-main section {
-    background-color: lightseagreen;
-}
-section .row {
-    height: 800px;
-    background-color: rgba(253, 119, 119, 0.379);
-}
 section .row .column {
-    background-color:rgba(127, 255, 212, 0.468) ;
+    /* background-color:rgba(127, 255, 212, 0.468) ; */
     border: 1px solid grey;
-}
-/* section .row .column  */
-section .partner {
-    height: 400px;
 }
 section .business {
     height: 600px;
@@ -121,7 +110,7 @@ footer {
     }
     section.jumbotron .jumbo-description * {
         display: block;
-        margin-bottom: 2em;    
+        margin-bottom: 3em;    
     }
     section.jumbotron .jumbo-description button {
         background-color: var(--buttons);
@@ -135,12 +124,16 @@ footer {
     }
     section.jumbotron .jumbo-image {
         width: 60%;
+        height: 0;
+    }
+    #oversized {
+        max-width: 110%;
     }
 
     /* main */
     main section {
-        width: 70%;
-        margin-top: 10rem;
+        width: 55%;
+        margin-top: 15rem;
         align-self: center;
     }
     section.wrap h2 {
@@ -151,7 +144,7 @@ footer {
     }
     section .row {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 8rem;
         gap: 30px;
         display: flex;
         flex-wrap: wrap;
@@ -161,6 +154,7 @@ footer {
     }
     section .row .column .type {
         text-align: center;
+        padding-bottom: 1rem;
         border-bottom: 1px solid gray;
     }
     section .row .column .content {
@@ -216,8 +210,39 @@ footer {
     section .row .column .content:last-child {
         margin-bottom: 10rem;
     }
+    section .row .column .content.end {
+        display: flex;
+        margin-bottom: 3rem;
+    }
     section .row .column:last-child {
         width: 100%;
+    }
+    section .partner {
+        display: flex;
+        width: 100%;
+        margin-bottom: 8rem;
+    }    
+    section .partner-image {
+        width: 60%;
+    }
+    section .partner .partner-description {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    section .partner .partner-description h5 {
+        font-size: 26px;
+    }
+    section .partner .partner-description * {
+        padding: 15px 30px;
+    }
+    section .partner .partner-description button {
+        width: 10em;
+        height: 2.5em;
+        margin: 10px 30px;
+        padding: 5px;
+        background: none;
+        border: 1px solid;
     }
     section .end-wrap {
         width: 100%;
