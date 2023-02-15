@@ -313,7 +313,7 @@ ul {
         width: 100%;    
         justify-content: center;
         align-items: baseline;
-        padding: 7% 2% 4% 2%;
+        padding: 7% 0% 4% 0%;
     }
     section.sponsor .box.bottom .text {
         width: 30%;
@@ -389,9 +389,10 @@ ul {
         display: none;
     }
     section.faq ul li i {
-        margin-left: 32%;
+        margin-left: 15%;
     }
     section.faq ul li.hover {
+        display: flex;
         cursor: pointer;
     }
     section.faq ul li.hover:hover + .hide {
