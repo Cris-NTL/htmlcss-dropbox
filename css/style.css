@@ -143,8 +143,12 @@ ul {
     }
     section .row .column .type {
         text-align: center;
-        padding-bottom: 1rem;
+        padding: 0.5rem 0;
         border-bottom: 1px solid gray;
+    }
+    section .row .column .type span {
+        vertical-align: middle;
+        display: inline-block;
     }
     section .row .column .content {
         width: 80%;
@@ -153,6 +157,7 @@ ul {
     }
     section .row .column .content h5 {
         font-size: 26px;
+        margin-bottom: 1rem;
     }
     section .row .column .content .price {
         font-weight: bold;
@@ -188,7 +193,7 @@ ul {
     }
     section .row .column div h6 {
         font-size: 16px;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;    
     }
     section .row .column div .check {
         margin-bottom: 1rem;
@@ -197,11 +202,15 @@ ul {
         color: var(--buttons);
     }
     section .row .column .content:last-child {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
     section .row .column .content.end {
         display: flex;
         margin-bottom: 3rem;
+    }
+    section .row .column .content.end button {
+        width: 30%;
+        height: 0%;
     }
     section .row .column:last-child {
         width: 100%;
@@ -270,18 +279,18 @@ ul {
     }
     section.sponsor .box.bottom {
         width: 100%;    
-        justify-content: space-around;
+        justify-content: center;
         align-items: baseline;
         padding: 7% 2% 4% 2%;
     }
     section.sponsor .box.bottom .text {
-        width: 40%;
+        width: 30%;
         font-size: 25px;
         color: var(--sponsor-text);
     }
     section.sponsor .box.bottom button {
-        padding: 5px 35px 5px 35px;
-        margin: 50px 0px 50px 0px;
+        padding: 0.4% 2.5% 0.4% 2.5%;
+        margin: 0% 0% 0% 8%;    
     }
     section .row .column:last-child {
         width: 100%;
@@ -334,8 +343,11 @@ ul {
     }
     section.faq ul li {
         padding: 15px 0;
+        font-weight: bold;
     }
-
+    section.faq ul li i {
+        margin-left: 32%;
+    }
     /* footer */
     .bottom-wrapper {
         width: 70%;
@@ -356,8 +368,15 @@ ul {
         font-size: 24px;
     }
     .bottom-wrapper .final {
+        width: 10%;
         margin-top: 8%;
     }
     .bottom-wrapper .final hr {
         margin-bottom: 70%;    
+    }
+    .bottom-wrapper .final span {
+        display: flex;
+    }
+    .bottom-wrapper .final span i {
+        margin: 0% 5%;    
     }
