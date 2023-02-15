@@ -8,19 +8,6 @@ img {
     max-width: 100%;
 }
 
-/* debug */
-section.faq {
-    height: 400px;
-    background-color: #4e45ff;
-}
-footer {
-    background-color: black;
-    height: 250px;
-}
-.bottom-wrapper {
-    background-color: rgba(255, 247, 0, 0.405);
-}
-
 /* utility */
 :root {
     --neutral:#ffffff; 
@@ -37,6 +24,7 @@ footer {
     --sponsor-7: #0D2481;
     --sponsor-8: #FFD830;
     --sponsor-1-bis: #D1E9CD;
+    --sponsor-text: #61082B;
 }
 
 /* common */
@@ -56,6 +44,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #000000;
+    color: white;
+}
+ul {
+    list-style-type: none;
 }
 
 /* body */
@@ -69,7 +62,6 @@ footer {
         position: fixed;
     }
     nav ul {
-        list-style-type: none;
         display: inline-flex;
     }
     nav ul li {
@@ -276,6 +268,21 @@ footer {
     section.sponsor .box.middle img {
         width: 60%;
     }
+    section.sponsor .box.bottom {
+        width: 100%;    
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 7% 2% 4% 2%;
+    }
+    section.sponsor .box.bottom .text {
+        width: 40%;
+        font-size: 25px;
+        color: var(--sponsor-text);
+    }
+    section.sponsor .box.bottom button {
+        padding: 5px 35px 5px 35px;
+        margin: 50px 0px 50px 0px;
+    }
     section .row .column:last-child {
         width: 100%;
     }
@@ -319,13 +326,38 @@ footer {
         background-color: var(--sponsor-8);
     }
     section.faq {
-        width: 50%;
+        width: 55%;
         margin-bottom: 100px;
     }
-    
+    section.faq h2 {
+        padding: 0px 0px 70px 0px;    
+    }
+    section.faq ul li {
+        padding: 15px 0;
+    }
+
     /* footer */
     .bottom-wrapper {
         width: 70%;
+        margin: 7% 0% 2% 0%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bottom-wrapper ul {
+        width: calc(100% / 5);
+    }
+    .bottom-wrapper ul li {
+        margin-bottom: 8%;
+    }
+    .bottom-wrapper ul li h4 {
+        margin-bottom: 20%;
+        font-size: 24px;
+    }
+    .bottom-wrapper .final {
+        margin-top: 8%;
+    }
+    .bottom-wrapper .final hr {
+        margin-bottom: 70%;    
     }
